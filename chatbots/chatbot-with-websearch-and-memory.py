@@ -69,13 +69,6 @@ if __name__ == "__main__":
     # except Exception:
     #     pass
 
-    def stream_graph_updates(user_input: str):
-        for event in graph.stream(
-            {"messages": [{"role": "user", "content": user_input}]}
-        ):
-            for value in event.values():
-                print("Assistant:", value["messages"][-1].content)
-
     config: RunnableConfig = {"configurable": {"thread_id": "1"}}
     with open("output.txt", "w") as f:
         while True:

@@ -1,0 +1,6 @@
+[
+    {"name": "Clean room", "done": true},
+    {"name": "Clean bathroom", "done": false},
+    {"name": "Replace lightbulb in lamp", "done": false},
+    {"name": "Buy more RAM", "done": false}
+]
